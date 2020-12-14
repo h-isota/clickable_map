@@ -5,7 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ AreaTest.class, CoordsTest.class, RectTest.class })
+@SuiteClasses({ AreaTest.class, CoordsTest.class, RectTest.class, TextAreaCalcTest.class })
 public class AllTests {
 
 }

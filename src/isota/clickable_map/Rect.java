@@ -29,7 +29,7 @@ public class Rect extends AreaShape {
 		if (cs.size() != 2) {
 			throw new Error("cs.size(): " + cs.size());
 		}
-		return "<area shape=\"rect\" coords=\"" + cs + "\" href=\"" + href + "\" alt=\"" + alt + "\">";
+		return String.format("<area shape=\"rect\" coords=\"%s\" href=\"%s\" alt=\"%s\">", cs, href, alt);
 	}
 
 	@Override
