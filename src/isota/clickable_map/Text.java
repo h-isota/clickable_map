@@ -3,7 +3,7 @@ package isota.clickable_map;
 import java.awt.Font;
 import java.awt.Graphics2D;
 
-public class Text extends AreaShape {
+public class Text extends TaggedShape {
     private String value;
     private Font font;
     private int x;

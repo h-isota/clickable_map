@@ -1,6 +1,6 @@
 package isota.clickable_map;
 
-public abstract class Poly extends AreaShape {
+public abstract class Poly extends TaggedShape {
 	private Coords cs = new Coords();
 
     public void add(int x, int y){

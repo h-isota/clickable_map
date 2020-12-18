@@ -2,7 +2,7 @@ package isota.clickable_map;
 
 import java.awt.Graphics2D;
 
-public class Rect extends AreaShape {
+public class Rect extends TaggedShape {
 	private Coords cs = new Coords();
 
     public void add(int x, int y){

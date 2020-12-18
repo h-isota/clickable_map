@@ -1,10 +1,10 @@
 package isota.clickable_map;
 
-public abstract class AreaShape extends Shape {
+public abstract class TaggedShape extends Shape {
     protected String alt;
     protected String href;
 
-    public AreaShape(String alt, String href){
+    public TaggedShape(String alt, String href){
     	this.alt = alt;
     	this.href = href;
     }
