@@ -4,13 +4,16 @@ import java.awt.Graphics2D;
 import java.io.File;
 
 public class ImageFile {
-    private Graphics2D g;
     private File path;
+    private String name;
 
-    public ImageFile(File path, int width, int height) {
+    public ImageFile(File path, String name) {
+    	this.path = path;
+    	this.name = name;
     }
 
-    public void draw(Image image){
+    public void draw(){
+        Graphics2D g;
     }
 
     public void close(){
