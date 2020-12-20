@@ -39,4 +39,4 @@ bin
 *.log
 *.swp
 *.bak
-/test/
+/site/
