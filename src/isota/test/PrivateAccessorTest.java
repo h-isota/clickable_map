@@ -9,11 +9,14 @@ import java.util.Hashtable;
 
 import org.junit.Test;
 
+import isota.util.PrivateAccessor;
+
 /**
  * @author isota
  *
  */
 public class PrivateAccessorTest {
+	@SuppressWarnings("unused")
 	private static class Sample {
 		private Hashtable<String, String> ht = new Hashtable<>();
 		private String put(String key, String value) {
@@ -25,7 +28,7 @@ public class PrivateAccessorTest {
 	}
 
 	/**
-	 * {@link isota.test.PrivateAccessor#call(java.lang.String, java.lang.Object[])} のためのテスト・メソッド。
+	 * {@link isota.util.PrivateAccessor#call(java.lang.String, java.lang.Object[])} のためのテスト・メソッド。
 	 */
 	@Test
 	public void testCall() {
@@ -34,7 +37,7 @@ public class PrivateAccessorTest {
 	}
 
 	/**
-	 * {@link isota.test.PrivateAccessor#call(java.lang.String, java.lang.Object[])} のためのテスト・メソッド。
+	 * {@link isota.util.PrivateAccessor#call(java.lang.Class, java.lang.String, java.lang.Object[])} のためのテスト・メソッド。
 	 */
 	@Test
 	public void testStaticCall() {
@@ -42,7 +45,7 @@ public class PrivateAccessorTest {
 	}
 
 	/**
-	 * {@link isota.test.PrivateAccessor#getField(java.lang.String)} のためのテスト・メソッド。
+	 * {@link isota.util.PrivateAccessor#getField(java.lang.String)} のためのテスト・メソッド。
 	 */
 	@Test
 	public void testGetField() {
@@ -52,7 +55,7 @@ public class PrivateAccessorTest {
 	}
 
 	/**
-	 * {@link isota.test.PrivateAccessor#setField(java.lang.String, java.lang.Object)} のためのテスト・メソッド。
+	 * {@link isota.util.PrivateAccessor#setField(java.lang.String, java.lang.Object)} のためのテスト・メソッド。
 	 */
 	@Test
 	public void testSetField() {

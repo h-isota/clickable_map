@@ -9,6 +9,9 @@ import java.util.Vector;
 
 import javax.imageio.ImageIO;
 
+import isota.clickable_map.shape.Shape;
+import isota.util.Area;
+
 /**
  * 画像ファイル
  * @author isota
@@ -86,10 +89,10 @@ public class ImageFile {
 
     /**
      * クリッカブルマップタグを取得します。
-     * @param src 画像ファイルのパス
+     * @param src 画像ファイルへの相対パス
      * @return クリッカブルマップタグ
      */
-    private String getTag(String src) {
+    public String getTag(String src) {
     	StringBuilder sb = new StringBuilder();
     	sb.append(String.format("<img src=\"%s\" alt=\"%s\" usemap=\"#%s\">", src, name, name)).append('\n');
     	sb.append(String.format("<map name=\"%s\">", name)).append('\n');
