@@ -972,7 +972,7 @@
                             <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
                             <target class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../../../../.."/>
                             <bendpoints/>
-                            <name>close()</name>
+                            <name>save(path)</name>
                             <direction>true</direction>
                             <order>3</order>
                             <oldOrder>3</oldOrder>
@@ -1222,7 +1222,7 @@
                                     <active reference="../children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel"/>
                                   </target>
                                   <bendpoints/>
-                                  <name>new(path)</name>
+                                  <name>new()</name>
                                   <direction>true</direction>
                                   <order>1</order>
                                   <oldOrder>1</oldOrder>

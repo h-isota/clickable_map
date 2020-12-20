@@ -956,7 +956,7 @@
                                                                     <height>-1</height>
                                                                     <width>-1</width>
                                                                     <x>948</x>
-                                                                    <y>724</y>
+                                                                    <y>688</y>
                                                                   </constraint>
                                                                   <sourceConnections/>
                                                                   <targetConnections>
@@ -2593,10 +2593,6 @@
                 <type>ImageFile</type>
                 <params>
                   <net.java.amateras.uml.classdiagram.model.Argument>
-                    <name>path</name>
-                    <type>File</type>
-                  </net.java.amateras.uml.classdiagram.model.Argument>
-                  <net.java.amateras.uml.classdiagram.model.Argument>
                     <name>name</name>
                     <type>String</type>
                   </net.java.amateras.uml.classdiagram.model.Argument>
@@ -2619,53 +2615,15 @@
                     <null/>
                   </java.beans.PropertyChangeSupport>
                 </listeners>
-                <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../net.java.amateras.uml.classdiagram.model.OperationModel/visibility"/>
-                <name>draw</name>
-                <type>void</type>
-                <params/>
-                <isAbstract>false</isAbstract>
-                <isStatic>false</isStatic>
-                <isFinal>false</isFinal>
-              </net.java.amateras.uml.classdiagram.model.OperationModel>
-              <net.java.amateras.uml.classdiagram.model.AttributeModel>
-                <backgroundColor reference="../../../../../../backgroundColor"/>
-                <foregroundColor reference="../../../../../../foregroundColor"/>
-                <showIcon>true</showIcon>
-                <parent class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
-                <listeners serialization="custom">
-                  <java.beans.PropertyChangeSupport>
-                    <default>
-                      <source class="net.java.amateras.uml.classdiagram.model.AttributeModel" reference="../../../.."/>
-                      <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-                    </default>
-                    <null/>
-                  </java.beans.PropertyChangeSupport>
-                </listeners>
-                <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$2"/>
-                <name>path</name>
-                <type>File</type>
-                <isStatic>false</isStatic>
-                <isFinal>false</isFinal>
-                <isEnumCst>false</isEnumCst>
-              </net.java.amateras.uml.classdiagram.model.AttributeModel>
-              <net.java.amateras.uml.classdiagram.model.OperationModel>
-                <backgroundColor reference="../../../../../../backgroundColor"/>
-                <foregroundColor reference="../../../../../../foregroundColor"/>
-                <showIcon>true</showIcon>
-                <parent class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
-                <listeners serialization="custom">
-                  <java.beans.PropertyChangeSupport>
-                    <default>
-                      <source class="net.java.amateras.uml.classdiagram.model.OperationModel" reference="../../../.."/>
-                      <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-                    </default>
-                    <null/>
-                  </java.beans.PropertyChangeSupport>
-                </listeners>
                 <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1"/>
-                <name>close</name>
+                <name>save</name>
                 <type>void</type>
-                <params/>
+                <params>
+                  <net.java.amateras.uml.classdiagram.model.Argument>
+                    <name>path</name>
+                    <type>String</type>
+                  </net.java.amateras.uml.classdiagram.model.Argument>
+                </params>
                 <isAbstract>false</isAbstract>
                 <isStatic>false</isStatic>
                 <isFinal>false</isFinal>
@@ -2711,7 +2669,7 @@
                     <null/>
                   </java.beans.PropertyChangeSupport>
                 </listeners>
-                <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../net.java.amateras.uml.classdiagram.model.OperationModel[4]/visibility"/>
+                <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../net.java.amateras.uml.classdiagram.model.OperationModel[3]/visibility"/>
                 <name>addTaggedShape</name>
                 <type>void</type>
                 <params>
@@ -2738,10 +2696,15 @@
                     <null/>
                   </java.beans.PropertyChangeSupport>
                 </listeners>
-                <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../net.java.amateras.uml.classdiagram.model.OperationModel[4]/visibility"/>
+                <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../net.java.amateras.uml.classdiagram.model.OperationModel[3]/visibility"/>
                 <name>getTag</name>
                 <type>String</type>
-                <params/>
+                <params>
+                  <net.java.amateras.uml.classdiagram.model.Argument>
+                    <name>src</name>
+                    <type>String</type>
+                  </net.java.amateras.uml.classdiagram.model.Argument>
+                </params>
                 <isAbstract>false</isAbstract>
                 <isStatic>false</isStatic>
                 <isFinal>false</isFinal>
@@ -2834,34 +2797,13 @@
         <height>-1</height>
         <width>-1</width>
         <x>493</x>
-        <y>724</y>
+        <y>688</y>
       </constraint>
       <sourceConnections/>
       <targetConnections>
         <net.java.amateras.uml.classdiagram.model.AggregationModel reference="../../parent/children/net.java.amateras.uml.classdiagram.model.ClassModel[2]/sourceConnections/net.java.amateras.uml.classdiagram.model.AggregationModel"/>
       </targetConnections>
       <children>
-        <net.java.amateras.uml.classdiagram.model.AttributeModel>
-          <backgroundColor reference="../../../backgroundColor"/>
-          <foregroundColor reference="../../../foregroundColor"/>
-          <showIcon>true</showIcon>
-          <parent class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
-          <listeners serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="net.java.amateras.uml.classdiagram.model.AttributeModel" reference="../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$2" reference="../../../parent/children/net.java.amateras.uml.classdiagram.model.ClassModel[2]/children/net.java.amateras.uml.classdiagram.model.AttributeModel/visibility"/>
-          <name>path</name>
-          <type>File</type>
-          <isStatic>false</isStatic>
-          <isFinal>false</isFinal>
-          <isEnumCst>false</isEnumCst>
-        </net.java.amateras.uml.classdiagram.model.AttributeModel>
         <net.java.amateras.uml.classdiagram.model.OperationModel>
           <backgroundColor reference="../../../backgroundColor"/>
           <foregroundColor reference="../../../foregroundColor"/>
@@ -2876,7 +2818,7 @@
               <null/>
             </java.beans.PropertyChangeSupport>
           </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../../parent/children/net.java.amateras.uml.classdiagram.model.ClassModel[2]/children/net.java.amateras.uml.classdiagram.model.OperationModel[3]/visibility"/>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../../parent/children/net.java.amateras.uml.classdiagram.model.ClassModel[2]/children/net.java.amateras.uml.classdiagram.model.OperationModel[2]/visibility"/>
           <name>addImageFile</name>
           <type>void</type>
           <params>
@@ -2903,10 +2845,15 @@
               <null/>
             </java.beans.PropertyChangeSupport>
           </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../../parent/children/net.java.amateras.uml.classdiagram.model.ClassModel[2]/children/net.java.amateras.uml.classdiagram.model.OperationModel[3]/visibility"/>
-          <name>close</name>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../../parent/children/net.java.amateras.uml.classdiagram.model.ClassModel[2]/children/net.java.amateras.uml.classdiagram.model.OperationModel[2]/visibility"/>
+          <name>save</name>
           <type>void</type>
-          <params/>
+          <params>
+            <net.java.amateras.uml.classdiagram.model.Argument>
+              <name>path</name>
+              <type>File</type>
+            </net.java.amateras.uml.classdiagram.model.Argument>
+          </params>
           <isAbstract>false</isAbstract>
           <isStatic>false</isStatic>
           <isFinal>false</isFinal>
@@ -2930,7 +2877,7 @@
           <type>HTMLFile</type>
           <params>
             <net.java.amateras.uml.classdiagram.model.Argument>
-              <name>path</name>
+              <name>tpl</name>
               <type>File</type>
             </net.java.amateras.uml.classdiagram.model.Argument>
           </params>
@@ -2938,6 +2885,27 @@
           <isStatic>true</isStatic>
           <isFinal>false</isFinal>
         </net.java.amateras.uml.classdiagram.model.OperationModel>
+        <net.java.amateras.uml.classdiagram.model.AttributeModel>
+          <backgroundColor reference="../../../backgroundColor"/>
+          <foregroundColor reference="../../../foregroundColor"/>
+          <showIcon>true</showIcon>
+          <parent class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
+          <listeners serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="net.java.amateras.uml.classdiagram.model.AttributeModel" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </listeners>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$2"/>
+          <name>tpl</name>
+          <type>File</type>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isEnumCst>false</isEnumCst>
+        </net.java.amateras.uml.classdiagram.model.AttributeModel>
       </children>
       <filterProperty/>
       <propertyDescriptors>

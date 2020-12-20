@@ -1,23 +1,27 @@
 package isota.clickable_map;
 
-import java.awt.Font;
 import java.awt.Graphics2D;
 
-public class Text extends TaggedShape {
+/**
+ * テキスト
+ * @author isota
+ */
+public class Text extends Shape {
     private String value;
-    private Font font;
-    private int x;
-    private int y;
-    private TextAreaCalc tac = TextAreaCalc.getInstance();
     private Coords cs = new Coords();
 
-    public Text(String alt, String href, String value, Font font, int x, int y) {
+    /**
+     * オブジェクトを生成します。
+     * @param alt alt 属性
+     * @param href href 属性
+     * @param value テキスト
+     * @param x 左下の X 座標
+     * @param y 左下の Y 座標
+     */
+    public Text(String alt, String href, String value, int x, int y) {
     	super(alt, href);
     	this.value = value;
-    	this.font = font;
-    	this.x = x;
-    	this.y = y;
-		Size s = tac.getSize(value, font);
+		Size s = TextSizeCalc.getSize(value);
 		cs.add(x, y - s.getHeight());
 		cs.add(x + s.getWidth(), y);
     }
@@ -34,8 +38,8 @@ public class Text extends TaggedShape {
 
 	@Override
 	public void draw(Graphics2D g) {
-		// TODO 自動生成されたメソッド・スタブ
-
+		Area a = getArea();
+		g.drawString(value, a.getX(), a.getY() + a.getHeight());
 	}
 
 }
