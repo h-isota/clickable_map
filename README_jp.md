@@ -32,7 +32,7 @@ target/clickable_map-0.0.1-SNAPSHOT.jar
 
 以下のソースを見ていただければ分かるかと思います。
 
-src/test/java/isota/test/HTMLFileTest.java
+[HTMLFileTest.java](src/test/java/isota/test/HTMLFileTest.java)
  
 # メモ
  
