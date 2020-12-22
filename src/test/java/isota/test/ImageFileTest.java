@@ -30,13 +30,9 @@ public class ImageFileTest {
 
 		PrivateAccessor pa = new PrivateAccessor(imgFile);
 		assertNull(pa.call("getArea"));
-		Rect r = new Rect("リンク1", "map1.html");
-		r.add(22, 11);
-		r.add(122, 62);
+		Rect r = new Rect("リンク1", "map1.html", 22, 11, 122, 62);
 		imgFile.addShape(r);
-		Rect r2 = new Rect("リンク2", "map2.html");
-		r2.add(22, 71);
-		r2.add(120, 82);
+		Rect r2 = new Rect("リンク2", "map2.html", 22, 71, 120, 82);
 		imgFile.addShape(r2);
 		assertEquals(new Area(22, 11, 100, 71), pa.call("getArea"));
 	}
@@ -48,13 +44,10 @@ public class ImageFileTest {
 	@Test
 	public void testSave() throws IOException {
 		ImageFile imgFile = new ImageFile("test1");
-		Rect r = new Rect("リンク1", "map1.html");
-		r.add(22, 11);
-		r.add(122, 62);
+		Rect r = new Rect("リンク1", "map1.html", 22, 11, 122, 62);
 		imgFile.addShape(r);
-		Rect r2 = new Rect("リンク2", "map2.html");
-		r2.add(22, 71);
-		r2.add(120, 82);
+		Rect r2 = new Rect("リンク2", "map2.html", 22, 71, 120, 82);
+		imgFile.addShape(r2);
 		imgFile.addShape(r2);
 		File path = new File("test/ImageFileTest_save.png");
 		imgFile.save(path);
@@ -80,13 +73,9 @@ public class ImageFileTest {
 	@Test
 	public void testGetTag() throws IOException {
 		ImageFile imgFile = new ImageFile("test1");
-		Rect r = new Rect("リンク1", "map1.html");
-		r.add(22, 11);
-		r.add(122, 62);
+		Rect r = new Rect("リンク1", "map1.html", 22, 11, 122, 62);
 		imgFile.addShape(r);
-		Rect r2 = new Rect("リンク2", "map2.html");
-		r2.add(22, 71);
-		r2.add(120, 82);
+		Rect r2 = new Rect("リンク2", "map2.html", 22, 71, 120, 82);
 		imgFile.addShape(r2);
 		assertTrue(imgFile.getTag("ImageFileTest_getTag.png").length() > 0);
 	}

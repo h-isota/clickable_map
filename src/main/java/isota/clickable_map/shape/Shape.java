@@ -10,7 +10,13 @@ import isota.util.Area;
  *
  */
 public abstract class Shape {
+	/**
+	 * alt 属性
+	 */
     protected String alt;
+    /**
+     * href 属性
+     */
     protected String href;
 
     /**

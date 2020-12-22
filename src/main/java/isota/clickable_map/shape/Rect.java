@@ -17,22 +17,15 @@ public class Rect extends Shape {
      * オブジェクトを生成します。
      * @param alt alt 属性
      * @param href href 属性
+	 * @param x1 左上の X 座標
+	 * @param y1 左上の Y 座標
+	 * @param x2 右下の X 座標
+	 * @param y2 右下の Y 座標
      */
-    public Rect(String alt, String href){
+    public Rect(String alt, String href, int x1, int y1, int x2, int y2){
     	super(alt, href);
-    }
-
-	/**
-	 * 座標を追加します。
-	 * 左上と右下の 2 回呼び出す必要があります。
-	 * @param x X 座標
-	 * @param y Y 座標
-	 */
-    public void add(int x, int y){
-    	if (cs.size() >= 2) {
-    		throw new Error("size(): " + cs.size());
-    	}
-    	cs.add(x, y);
+    	cs.add(x1, y1);
+    	cs.add(x2, y2);
     }
 
 	@Override

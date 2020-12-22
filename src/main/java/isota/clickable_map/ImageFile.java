@@ -24,7 +24,7 @@ public class ImageFile {
 
     /**
      * オブジェクトを生成します。
-     * @param name 画像を識別する名前
+     * @param name 画像名
      */
     public ImageFile(String name) {
     	this.name = name;
