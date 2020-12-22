@@ -14,49 +14,7 @@
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>15</maven.compiler.source>
-    <maven.compiler.target>15</maven.compiler.target>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
   </properties>
-
-  <build>
-    <plugins>
-	  <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-site-plugin</artifactId>
-		<version>3.9.1</version>
-	  </plugin>
-	  <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-project-info-reports-plugin</artifactId>
-		<version>3.1.1</version>
-	  </plugin>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-      </plugin>
-    </plugins>
-  </build>
-  <reporting>
-    <outputDirectory>site</outputDirectory>
-    <plugins>
-	  <plugin>
-		<artifactId>maven-shade-plugin</artifactId>
-		<version>3.2.4</version>
-	  </plugin>
-	  <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-		<version>3.2.0</version>
-        <configuration>
-          <encoding>UTF-8</encoding>
-          <docencoding>UTF-8</docencoding>
-          <charset>UTF-8</charset>
-		  <failOnError>false</failOnError>
-		  <links>
-            <link>https://docs.oracle.com/javase/jp/13/docs/api/</link>
-		  </links>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
 </project>
