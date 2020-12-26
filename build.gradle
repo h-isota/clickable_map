@@ -8,8 +8,8 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 11
-targetCompatibility = 11
+sourceCompatibility = 15
+targetCompatibility = 15
 
 /*
 application {
@@ -19,4 +19,8 @@ application {
 
 dependencies {
     testImplementation "junit:junit:4.13.1"
+}
+
+wrapper {
+    gradleVersion = '6.7.1'
 }
