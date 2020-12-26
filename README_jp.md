@@ -4,7 +4,7 @@
 
 # デモ
 
-[この](test/HTMLFileTest_save.html) ようなクリッカブルマップを
+[この](https://h-isota.github.io/clickable_map/test/HTMLFileTest_save.html) ようなクリッカブルマップを
 Java で生成します。
  
 # 特徴
@@ -41,7 +41,7 @@ build/libs/clickable_map.jar
 
 # メモ
 
-- クラス図は [こちら](doc/001clickable_map.png)
+- クラス図は [こちら](https://h-isota.github.io/clickable_map/doc/001clickable_map.png)
 
 - API ドキュメントが見たい場合
 ```bash

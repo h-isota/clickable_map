@@ -5,7 +5,7 @@ A Java library that generates clickable maps.
 # Demo
 
 Generate a clickable map in Java
-like [this](test/HTMLFileTest_save.html).
+like [this](https://h-isota.github.io/clickable_map/test/HTMLFileTest_save.html).
 
 # Feature
 
@@ -41,7 +41,7 @@ Test run
 
 # Note
 
-- Class Diagram is [here](doc/001clickable_map.png)
+- Class Diagram is [here](https://h-isota.github.io/clickable_map/doc/001clickable_map.png)
 
 - If you want to see the API documentation
 ```bash
