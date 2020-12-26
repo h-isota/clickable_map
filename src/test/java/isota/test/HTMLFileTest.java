@@ -70,7 +70,7 @@ public class HTMLFileTest {
 		imgFile.addShape(new Default("リンク4", "map4.html"));
 
 		// 画像を保存
-		imgFile.save(new File("test/HTMLFileTest_save.png"));
+		imgFile.save(new File("docs/test/HTMLFileTest_save.png"));
 
 		// テンプレートファイルを指定して HTML オブジェクトを作成
 		HTMLFile hf = new HTMLFile(new File("index.html.tpl"));
@@ -79,7 +79,7 @@ public class HTMLFileTest {
 		hf.addImageFile(imgFile);
 
 		// HTML を保存
-		hf.save(new File("test/HTMLFileTest_save.html"));
+		hf.save(new File("docs/test/HTMLFileTest_save.html"));
 	}
 
 }

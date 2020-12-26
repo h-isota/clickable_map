@@ -49,7 +49,7 @@ public class ImageFileTest {
 		Rect r2 = new Rect("リンク2", "map2.html", 22, 71, 120, 82);
 		imgFile.addShape(r2);
 		imgFile.addShape(r2);
-		File path = new File("test/ImageFileTest_save.png");
+		File path = new File("docs/test/ImageFileTest_save.png");
 		imgFile.save(path);
 		assertTrue(path.exists());
 	}
