@@ -1,0 +1,22 @@
+plugins {
+	id 'java'
+	id 'application'
+	id 'eclipse'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+/*
+application {
+	mainClassName = 'javafx_study.Main'
+}
+*/
+
+dependencies {
+    testImplementation "junit:junit:4.13.1"
+}
