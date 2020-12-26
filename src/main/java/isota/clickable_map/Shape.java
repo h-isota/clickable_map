@@ -1,4 +1,4 @@
-package isota.clickable_map.shape;
+package isota.clickable_map;
 
 import java.awt.Graphics2D;
 

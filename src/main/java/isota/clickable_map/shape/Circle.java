@@ -2,6 +2,7 @@ package isota.clickable_map.shape;
 
 import java.awt.Graphics2D;
 
+import isota.clickable_map.Shape;
 import isota.util.Area;
 
 /**

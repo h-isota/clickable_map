@@ -40,8 +40,10 @@ build/libs/clickable_map.jar
 
 
 # メモ
- 
-API ドキュメントが見たい場合。
+
+- クラス図は [こちら](doc/001clickable_map.png)
+
+- API ドキュメントが見たい場合
 ```bash
 ./gradlew javadoc
 ```

@@ -41,7 +41,9 @@ Test run
 
 # Note
 
-If you want to see the API documentation.
+- Class Diagram is [here](doc/001clickable_map.png)
+
+- If you want to see the API documentation
 ```bash
 ./gradlew javadoc
 ```

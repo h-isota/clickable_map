@@ -9,7 +9,6 @@ import java.util.Vector;
 
 import javax.imageio.ImageIO;
 
-import isota.clickable_map.shape.Shape;
 import isota.util.Area;
 
 /**

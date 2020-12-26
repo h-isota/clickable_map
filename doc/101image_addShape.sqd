@@ -5148,7 +5148,7 @@
             </java.beans.PropertyChangeSupport>
           </listeners>
           <constraint>
-            <height>587</height>
+            <height>527</height>
             <width>5</width>
             <x>111</x>
             <y>20</y>
@@ -5229,7 +5229,7 @@
                           </java.beans.PropertyChangeSupport>
                         </listeners>
                         <constraint>
-                          <height>492</height>
+                          <height>432</height>
                           <width>5</width>
                           <x>251</x>
                           <y>115</y>
@@ -5361,7 +5361,7 @@
                           </java.beans.PropertyChangeSupport>
                         </listeners>
                         <constraint>
-                          <height>412</height>
+                          <height>352</height>
                           <width>5</width>
                           <x>395</x>
                           <y>195</y>
@@ -5411,7 +5411,7 @@
                               </java.beans.PropertyChangeSupport>
                             </listeners>
                             <constraint>
-                              <height>59</height>
+                              <height>60</height>
                               <width>10</width>
                               <x>390</x>
                               <y>258</y>
@@ -5446,8 +5446,8 @@
                                   <constraint>
                                     <height>-1</height>
                                     <width>111</width>
-                                    <x>483</x>
-                                    <y>258</y>
+                                    <x>501</x>
+                                    <y>259</y>
                                   </constraint>
                                   <sourceConnections/>
                                   <targetConnections>
@@ -5469,10 +5469,10 @@
                                         </java.beans.PropertyChangeSupport>
                                       </listeners>
                                       <constraint>
-                                        <height>349</height>
+                                        <height>288</height>
                                         <width>5</width>
-                                        <x>538</x>
-                                        <y>258</y>
+                                        <x>556</x>
+                                        <y>259</y>
                                       </constraint>
                                       <sourceConnections/>
                                       <targetConnections/>
@@ -5494,8 +5494,8 @@
                                           <constraint>
                                             <height>30</height>
                                             <width>10</width>
-                                            <x>533</x>
-                                            <y>277</y>
+                                            <x>551</x>
+                                            <y>278</y>
                                           </constraint>
                                           <sourceConnections/>
                                           <targetConnections/>
@@ -5516,7 +5516,7 @@
                                   <active reference="../children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel"/>
                                 </target>
                                 <bendpoints/>
-                                <name>getInstance</name>
+                                <name>getSize(value)</name>
                                 <direction>true</direction>
                                 <order>3</order>
                                 <oldOrder>3</oldOrder>
@@ -5567,10 +5567,10 @@
                 </java.beans.PropertyChangeSupport>
               </listeners>
               <constraint>
-                <height>76</height>
+                <height>75</height>
                 <width>10</width>
                 <x>106</x>
-                <y>295</y>
+                <y>318</y>
               </constraint>
               <sourceConnections>
                 <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -5602,8 +5602,8 @@
                     <constraint>
                       <height>-1</height>
                       <width>117</width>
-                      <x>612</x>
-                      <y>312</y>
+                      <x>640</x>
+                      <y>334</y>
                     </constraint>
                     <sourceConnections/>
                     <targetConnections>
@@ -5625,10 +5625,10 @@
                           </java.beans.PropertyChangeSupport>
                         </listeners>
                         <constraint>
-                          <height>295</height>
+                          <height>213</height>
                           <width>5</width>
-                          <x>670</x>
-                          <y>312</y>
+                          <x>698</x>
+                          <y>334</y>
                         </constraint>
                         <sourceConnections/>
                         <targetConnections/>
@@ -5650,8 +5650,8 @@
                             <constraint>
                               <height>30</height>
                               <width>10</width>
-                              <x>665</x>
-                              <y>331</y>
+                              <x>693</x>
+                              <y>353</y>
                             </constraint>
                             <sourceConnections/>
                             <targetConnections/>
@@ -5677,8 +5677,8 @@
                             <constraint>
                               <height>30</height>
                               <width>10</width>
-                              <x>665</x>
-                              <y>384</y>
+                              <x>693</x>
+                              <y>417</y>
                             </constraint>
                             <sourceConnections>
                               <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -5711,7 +5711,7 @@
                                     <height>40</height>
                                     <width>10</width>
                                     <x>106</x>
-                                    <y>384</y>
+                                    <y>417</y>
                                   </constraint>
                                   <sourceConnections>
                                     <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -5772,8 +5772,8 @@
                             <constraint>
                               <height>30</height>
                               <width>10</width>
-                              <x>665</x>
-                              <y>438</y>
+                              <x>693</x>
+                              <y>477</y>
                             </constraint>
                             <sourceConnections>
                               <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -5806,7 +5806,7 @@
                                     <height>40</height>
                                     <width>10</width>
                                     <x>106</x>
-                                    <y>438</y>
+                                    <y>477</y>
                                   </constraint>
                                   <sourceConnections>
                                     <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -5823,7 +5823,7 @@
                                       <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
                                       <target class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../../../../.."/>
                                       <bendpoints/>
-                                      <name>addAreaShape(link)</name>
+                                      <name>addShape(link)</name>
                                       <direction>true</direction>
                                       <order>6</order>
                                       <oldOrder>6</oldOrder>
@@ -5862,7 +5862,7 @@
                     <active reference="../children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel"/>
                   </target>
                   <bendpoints/>
-                  <name>new(path, name)</name>
+                  <name>new(name)</name>
                   <direction>true</direction>
                   <order>4</order>
                   <oldOrder>4</oldOrder>
@@ -5890,67 +5890,6 @@
     <net.java.amateras.uml.sequencediagram.model.InstanceModel reference="../net.java.amateras.uml.sequencediagram.model.ActorModel/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[2]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target"/>
     <net.java.amateras.uml.sequencediagram.model.InstanceModel reference="../net.java.amateras.uml.sequencediagram.model.ActorModel/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[2]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[2]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target"/>
     <net.java.amateras.uml.sequencediagram.model.InstanceModel reference="../net.java.amateras.uml.sequencediagram.model.ActorModel/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[3]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target"/>
-    <net.java.amateras.uml.sequencediagram.model.InstanceModel>
-      <backgroundColor reference="../../../backgroundColor"/>
-      <foregroundColor reference="../../../foregroundColor"/>
-      <showIcon>true</showIcon>
-      <parent class="net.java.amateras.uml.sequencediagram.model.InteractionModel" reference="../../.."/>
-      <listeners serialization="custom">
-        <java.beans.PropertyChangeSupport>
-          <default>
-            <source class="net.java.amateras.uml.sequencediagram.model.InstanceModel" reference="../../../.."/>
-            <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-          </default>
-          <null/>
-        </java.beans.PropertyChangeSupport>
-      </listeners>
-      <constraint>
-        <height>-1</height>
-        <width>100</width>
-        <x>747</x>
-        <y>20</y>
-      </constraint>
-      <sourceConnections/>
-      <targetConnections/>
-      <children>
-        <net.java.amateras.uml.sequencediagram.model.LifeLineModel>
-          <backgroundColor reference="../../../../../backgroundColor"/>
-          <foregroundColor reference="../../../../../foregroundColor"/>
-          <showIcon>true</showIcon>
-          <parent class="net.java.amateras.uml.sequencediagram.model.InteractionModel" reference="../../../../.."/>
-          <listeners serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="net.java.amateras.uml.sequencediagram.model.LifeLineModel" reference="../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </listeners>
-          <constraint>
-            <height>161</height>
-            <width>5</width>
-            <x>797</x>
-            <y>20</y>
-          </constraint>
-          <sourceConnections/>
-          <targetConnections/>
-          <children/>
-          <filterProperty/>
-          <owner reference="../../.."/>
-        </net.java.amateras.uml.sequencediagram.model.LifeLineModel>
-      </children>
-      <filterProperty/>
-      <name>map: Map</name>
-      <lifeLine reference="../children/net.java.amateras.uml.sequencediagram.model.LifeLineModel"/>
-      <root reference="../../.."/>
-      <oldRectangle>
-        <height>-1</height>
-        <width>100</width>
-        <x>747</x>
-        <y>446</y>
-      </oldRectangle>
-    </net.java.amateras.uml.sequencediagram.model.InstanceModel>
   </instances>
   <activations>
     <net.java.amateras.uml.sequencediagram.model.ActivationModel reference="../../instances/net.java.amateras.uml.sequencediagram.model.ActorModel/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel"/>
@@ -5973,6 +5912,5 @@
     <net.java.amateras.uml.sequencediagram.model.LifeLineModel reference="../../instances/net.java.amateras.uml.sequencediagram.model.ActorModel/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[2]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel"/>
     <net.java.amateras.uml.sequencediagram.model.LifeLineModel reference="../../instances/net.java.amateras.uml.sequencediagram.model.ActorModel/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[2]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[2]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel"/>
     <net.java.amateras.uml.sequencediagram.model.LifeLineModel reference="../../instances/net.java.amateras.uml.sequencediagram.model.ActorModel/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel/children/net.java.amateras.uml.sequencediagram.model.ActivationModel[3]/sourceConnections/net.java.amateras.uml.sequencediagram.model.SyncMessageModel/target/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel"/>
-    <net.java.amateras.uml.sequencediagram.model.LifeLineModel reference="../../instances/net.java.amateras.uml.sequencediagram.model.InstanceModel[5]/children/net.java.amateras.uml.sequencediagram.model.LifeLineModel"/>
   </lifelines>
 </net.java.amateras.uml.sequencediagram.model.InteractionModel>
