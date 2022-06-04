@@ -16,58 +16,64 @@ import isota.util.PrivateAccessor;
  *
  */
 public class PrivateAccessorTest {
-	@SuppressWarnings("unused")
-	private static class Sample {
-		private Hashtable<String, String> ht = new Hashtable<>();
-		private String put(String key, String value) {
-			return ht.put(key, value);
-		}
-		private static String getMessage(String name) {
-			return "Hello " + name + "!";
-		}
+    @SuppressWarnings("unused")
+    private static class Sample {
+	private Hashtable<String, String> ht = new Hashtable<>();
+
+	private String put(String key, String value) {
+	    return ht.put(key, value);
 	}
 
-	/**
-	 * {@link isota.util.PrivateAccessor#call(java.lang.String, java.lang.Object[])} のためのテスト・メソッド。
-	 */
-	@Test
-	public void testCall() {
-		PrivateAccessor pa = new PrivateAccessor(new Sample());
-		assertNull(pa.call("put", "key1", "value1"));
+	private static String getMessage(String name) {
+	    return "Hello " + name + "!";
 	}
+    }
 
-	/**
-	 * {@link isota.util.PrivateAccessor#call(java.lang.Class, java.lang.String, java.lang.Object[])} のためのテスト・メソッド。
-	 */
-	@Test
-	public void testStaticCall() {
-		assertEquals("Hello aaa!", PrivateAccessor.call(Sample.class, "getMessage", "aaa"));
-	}
+    /**
+     * {@link isota.util.PrivateAccessor#call(java.lang.String, java.lang.Object[])}
+     * のためのテスト・メソッド。
+     */
+    @Test
+    public void testCall() {
+	PrivateAccessor pa = new PrivateAccessor(new Sample());
+	assertNull(pa.call("put", "key1", "value1"));
+    }
 
-	/**
-	 * {@link isota.util.PrivateAccessor#getField(java.lang.String)} のためのテスト・メソッド。
-	 */
-	@Test
-	public void testGetField() {
-		PrivateAccessor pa = new PrivateAccessor(new Sample());
-		pa.call("put", "key1", "value1");
-		assertEquals("value1", pa.<Hashtable<String, String>>getField("ht").get("key1"));
-	}
+    /**
+     * {@link isota.util.PrivateAccessor#call(java.lang.Class, java.lang.String, java.lang.Object[])}
+     * のためのテスト・メソッド。
+     */
+    @Test
+    public void testStaticCall() {
+	assertEquals("Hello aaa!", PrivateAccessor.call(Sample.class, "getMessage", "aaa"));
+    }
 
-	/**
-	 * {@link isota.util.PrivateAccessor#setField(java.lang.String, java.lang.Object)} のためのテスト・メソッド。
-	 */
-	@Test
-	public void testSetField() {
-		PrivateAccessor pa = new PrivateAccessor(new Sample());
-		pa.call("put", "key1", "value1");
-		assertEquals(1, pa.<Hashtable<String, String>>getField("ht").size());
-		pa.setField("ht", new Hashtable<String, String>());
-		assertEquals(0, pa.<Hashtable<String, String>>getField("ht").size());
-		try {
-			pa.setField("ht", "aaa");
-			fail();
-		} catch (IllegalArgumentException e) {}
+    /**
+     * {@link isota.util.PrivateAccessor#getField(java.lang.String)} のためのテスト・メソッド。
+     */
+    @Test
+    public void testGetField() {
+	PrivateAccessor pa = new PrivateAccessor(new Sample());
+	pa.call("put", "key1", "value1");
+	assertEquals("value1", pa.<Hashtable<String, String>>getField("ht").get("key1"));
+    }
+
+    /**
+     * {@link isota.util.PrivateAccessor#setField(java.lang.String, java.lang.Object)}
+     * のためのテスト・メソッド。
+     */
+    @Test
+    public void testSetField() {
+	PrivateAccessor pa = new PrivateAccessor(new Sample());
+	pa.call("put", "key1", "value1");
+	assertEquals(1, pa.<Hashtable<String, String>>getField("ht").size());
+	pa.setField("ht", new Hashtable<String, String>());
+	assertEquals(0, pa.<Hashtable<String, String>>getField("ht").size());
+	try {
+	    pa.setField("ht", "aaa");
+	    fail();
+	} catch (IllegalArgumentException e) {
 	}
+    }
 
 }

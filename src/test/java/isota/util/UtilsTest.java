@@ -13,20 +13,20 @@ import org.junit.Test;
  */
 public class UtilsTest {
 
-	/**
-	 * {@link isota.util.Utils#getLineCd()} のためのテスト・メソッド。
-	 */
-	@Test
-	public void testGetLineCd() {
-		assertEquals(System.getProperty("line.separator"), Utils.getLineCd());
-	}
+    /**
+     * {@link isota.util.Utils#getLineCd()} のためのテスト・メソッド。
+     */
+    @Test
+    public void testGetLineCd() {
+	assertEquals(System.getProperty("line.separator"), Utils.getLineCd());
+    }
 
-	/**
-	 * {@link isota.util.Utils#readAllLinesString()} のためのテスト・メソッド。
-	 */
-	@Test
-	public void testReadAllLinesString() {
-		String text = """
+    /**
+     * {@link isota.util.Utils#readAllLinesString()} のためのテスト・メソッド。
+     */
+    @Test
+    public void testReadAllLinesString() {
+	String text = """
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -41,7 +41,7 @@ public class UtilsTest {
 </body>
 </html>
 """;
-		assertEquals(text, Utils.readAllLinesString("index.html.tpl", "\n"));
-	}
+	assertEquals(text, Utils.readAllLinesString("index.html.tpl", "\n"));
+    }
 
 }
