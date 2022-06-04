@@ -1,5 +1,8 @@
-<html>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
 <body>
 こんにちは。
 <table border="1"><tr><td>

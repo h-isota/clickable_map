@@ -12,6 +12,8 @@ import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import isota.util.Utils;
+
 /**
  * HTML ファイル
  * @author isota
@@ -42,7 +44,7 @@ public class HTMLFile {
     	String line = null;
     	while ((line = in.readLine()) != null) {
     		if (sb.length() > 0) {
-    			sb.append('\n');
+    			sb.append(Utils.getLineCd());
     		}
     		sb.append(line);
     	}
@@ -64,7 +66,7 @@ public class HTMLFile {
     				if (keys.length() > 0) keys += ", ";
     				keys += k;
     			}
-    			throw new Error("not contains key: " + key + "\nYou can use keys: " + keys);
+    			throw new Error("not contains key: " + key + Utils.getLineCd() + "You can use keys: " + keys);
     		}
     		lines = mp.replaceFirst(params.get(key));
     		mp.reset(lines);

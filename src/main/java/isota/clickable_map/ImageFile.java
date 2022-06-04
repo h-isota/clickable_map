@@ -10,6 +10,7 @@ import java.util.Vector;
 import javax.imageio.ImageIO;
 
 import isota.util.Area;
+import isota.util.Utils;
 
 /**
  * 画像ファイル
@@ -93,12 +94,12 @@ public class ImageFile {
      */
     public String getTag(String src) {
     	StringBuilder sb = new StringBuilder();
-    	sb.append(String.format("<img src=\"%s\" alt=\"%s\" usemap=\"#%s\">", src, name, name)).append('\n');
-    	sb.append(String.format("<map name=\"%s\">", name)).append('\n');
+    	sb.append(String.format("<img src=\"%s\" alt=\"%s\" usemap=\"#%s\">", src, name, name)).append(Utils.getLineCd());
+    	sb.append(String.format("<map name=\"%s\">", name)).append(Utils.getLineCd());
     	for (Shape ts: shapes) {
-    		sb.append(ts.getTag()).append('\n');
+    		sb.append(ts.getTag()).append(Utils.getLineCd());
     	}
-    	sb.append(String.format("</map>", name)).append('\n');
+    	sb.append(String.format("</map>", name)).append(Utils.getLineCd());
     	return sb.toString();
     }
 
