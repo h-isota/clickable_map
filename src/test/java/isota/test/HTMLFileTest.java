@@ -3,11 +3,8 @@
  */
 package isota.test;
 
-import static org.junit.Assert.*;
-
 import java.io.File;
 import java.io.IOException;
-import java.util.Hashtable;
 
 import org.junit.Test;
 
@@ -18,25 +15,12 @@ import isota.clickable_map.shape.Default;
 import isota.clickable_map.shape.Poly;
 import isota.clickable_map.shape.Rect;
 import isota.clickable_map.shape.Text;
-import isota.util.PrivateAccessor;
 
 /**
  * @author isota
  *
  */
 public class HTMLFileTest {
-
-	/**
-	 * {@link isota.clickable_map.HTMLFile#getHTML(java.util.Hashtable)} のためのテスト・メソッド。
-	 */
-	@Test
-	public void testGetHTML() {
-		HTMLFile hf = new HTMLFile(new File("index.html.tpl"));
-		Hashtable<String, String> params = new Hashtable<>();
-		params.put("test1", "<img src='aaa.png'>");
-		PrivateAccessor pc = new PrivateAccessor(hf);
-		assertTrue(((String) pc.call("getHTML", params)).length() > 0);
-	}
 
 	/**
 	 * {@link isota.clickable_map.HTMLFile#save(java.io.File)} のためのテスト・メソッド。

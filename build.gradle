@@ -28,3 +28,12 @@ wrapper {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
+tasks.withType(Test) {
+    systemProperty "file.encoding", "UTF-8"
+}
+
+javadoc {
+    options.charSet = 'UTF-8'
+    options.encoding = 'UTF-8'
+}
