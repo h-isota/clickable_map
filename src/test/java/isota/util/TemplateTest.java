@@ -22,23 +22,23 @@ public class TemplateTest {
     @Before
     public void setUp() throws Exception {
 	String text = """
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-</head>
-<body>
-こんにちは。
-<table border="1"><tr><td>
-<%-- ↓ img タグに置き換わる --%>
-<%= test1 %>
-</td><%= test2 %><%= test2 %></tr></table>
-<%-- これはヒットしない
-<%= test3 %>
---%>
-</body>
-</html>
-""";
+		<!DOCTYPE html>
+		<html lang="ja">
+		<head>
+		  <meta charset="UTF-8">
+		</head>
+		<body>
+		こんにちは。
+		<table border="1"><tr><td>
+		<%-- ↓ img タグに置き換わる --%>
+		<%= test1 %>
+		</td><%= test2 %><%= test2 %></tr></table>
+		<%-- これはヒットしない
+		<%= test3 %>
+		--%>
+		</body>
+		</html>
+		""";
 	String tpl = text;
 	tplObj = new Template(tpl);
 	pa = new PrivateAccessor(tplObj);
@@ -92,21 +92,21 @@ public class TemplateTest {
     @Test
     public void testGetResult() {
 	String text = """
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-</head>
-<body>
-こんにちは。
-<table border="1"><tr><td>
+		<!DOCTYPE html>
+		<html lang="ja">
+		<head>
+		  <meta charset="UTF-8">
+		</head>
+		<body>
+		こんにちは。
+		<table border="1"><tr><td>
 
-value
-</td><td>a</td><td>a</td></tr></table>
+		value
+		</td><td>a</td><td>a</td></tr></table>
 
-</body>
-</html>
-""";
+		</body>
+		</html>
+		""";
 	tplObj.setParam("test1", "value");
 	tplObj.setParam("test2", "<td>a</td>");
 	assertEquals(text, tplObj.getResult());
